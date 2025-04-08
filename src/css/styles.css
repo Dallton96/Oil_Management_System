@@ -13,6 +13,7 @@ body {
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 44px;
     font-weight: bold;
+    color: #2F3431;
 }
 
 /*Estilos para el bloque de Main*/
@@ -64,6 +65,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
+    color: #2F4858;
 }
 
 .main .loggin .user-label, .password-label{
@@ -79,6 +81,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+    color: #2F4858;
 }
 
 .main .loggin .input-user, .input-password {
@@ -151,6 +154,10 @@ body {
     text-align: right;
 }
 
+.label-buttons .create-account a:hover, .forgot-password a:hover {
+    color:#86BBD8;
+}
+
 .button-loggin {
     display: flex;
     width: 100%;
@@ -174,6 +181,11 @@ body {
     font-family: "Arial", "Helvetica", sans-serif;
     font-size: 24px;
     border-radius: 12px;
+    font-weight: bold;
+}
+
+.button-loggin a:hover {
+    background-color: #86BBD8;
 }
 /*Estilos para el bloque de Contacto*/
 .contact-block {
@@ -253,7 +265,7 @@ body {
     }
 
     .main .loggin .user-label, .password-label{
-        font-size: 20px;
+        font-size: 18px;
         padding: 4px 0px;
     }
 
