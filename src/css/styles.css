@@ -178,10 +178,6 @@ body {
 /*Estilos para el bloque de Contacto*/
 .contact-block {
     display: flex;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
     justify-content:space-between;
     width: 1080px;
     margin: 60px auto;
