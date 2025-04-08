@@ -1,0 +1,286 @@
+body {
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+/*Estilos para el bloque de Título*/
+.header {
+    display: flex;
+    justify-content:center;
+    width: 1080px;
+    margin: 40px auto;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+/*Estilos para el bloque de Main*/
+.main {
+    display: flex;
+    justify-content: left;
+    width: 1080px;
+    margin: 60px auto;
+}
+
+.main .image-main img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.main .image-main {
+    width: 400px;
+    height: 400px;
+    border: 12px;
+    margin: auto 0px;
+}
+
+.main .line {
+    width: 5px;
+    height: 560px;
+    background-color: rgb(51, 102, 153);
+    margin: 0px 16px;
+}
+
+.main .loggin {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 4px 8px;
+    width: 100%;
+}
+
+.main .loggin .loggin-label {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    padding: 8px 0px;
+    border: none;
+    margin:  0;
+    font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main .loggin .user-label, .password-label{
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    padding: 8px 0px;
+    border: none;
+    margin:  0;
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.main .loggin .input-user, .input-password {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+.main .loggin .input-user input, .input-password input {
+    display: block;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #F1F1F1;
+    border-radius: 24px;
+    background-color: #F1F1F1;
+    font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+    font-size: 22px;
+    margin: 0px;
+    outline: none;
+    color: #336699;
+}
+
+.main .loggin .input-user input:focus, .input-password input:focus {
+    border: 1px solid #86BBD8;
+}
+
+.main .loggin .input-user input:focus::placeholder, .input-password input:focus::placeholder {
+    color:#86BBD8;
+}
+
+.main .loggin .input-user input::placeholder, .input-password input::placeholder {
+    color: #B3B3B3;
+}
+
+.label-buttons {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px 8px;
+    font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+    font-size: 22px;
+    color:rgb(51, 102, 153);
+}
+
+.create-account, .forgot-password {
+    display: block;
+    width: 100%;
+}
+
+.label-buttons .create-account a, .forgot-password a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    height: auto;
+}
+
+.label-buttons .create-account a {
+    text-align: left;
+}
+
+.label-buttons .forgot-password a {
+    text-align: right;
+}
+
+.button-loggin {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content:center;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.button-loggin a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 12px 0px;
+    color:#ffffff;
+    background-color: #336699;
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 24px;
+    border-radius: 12px;
+}
+/*Estilos para el bloque de Contacto*/
+.contact-block {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content:space-between;
+    width: 1080px;
+    margin: 60px auto;
+}
+
+.contact-block .contact-label {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+    color:rgb(51, 102, 153);
+}
+
+.button-contact {
+    display: inline-block;
+    align-items: center;
+    gap: 24px;
+    padding: 0px 8px;
+}
+.button-contact a {
+    padding: 12px;
+    border-radius: 32px;
+    display: inline-block;
+    background-color: #FFFFFF;    
+}
+
+.button-contact a svg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.button-contact a svg path {
+    fill: rgb(51, 102, 153) !important;
+    transition: fill 0.2s ease;
+}
+
+.button-contact:hover a svg path {
+    fill: rgb(134, 187, 216) !important;
+}
+
+.button-contact:hover a {
+    background-color: rgb(51, 102, 153);    
+}
+
+@media (max-width: 1079px) {
+    body {
+        width: 100%;
+    }
+    .image-main, .line {
+        display: none;
+    }
+    .main, .header, .contact-block {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .header {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main .loggin {
+        gap: 4px;
+        padding: 8px 12px;
+        width: 100%;
+    }
+    
+    .main .loggin .loggin-label {
+        font-size: 28px;
+    }
+
+    .main .loggin .user-label, .password-label{
+        font-size: 20px;
+        padding: 4px 0px;
+    }
+
+    .main .loggin .input-user input, .input-password input {
+        padding: 12px 16px;
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    .button-loggin a {
+        width: 80%;
+        padding: 12px 0px;
+        font-size: 20px;
+    }
+
+    .label-buttons {
+        font-size: 16px;
+    }
+
+    .contact-block .contact-label {
+        display: none;
+    }
+    .contact-block {
+        justify-content: right;
+    }
+}
