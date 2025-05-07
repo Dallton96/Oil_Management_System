@@ -14,18 +14,18 @@
     <div class="main">
         <div class="image-main"><img src="src/assets/oil_ilustration.jpg" alt="Oil_Management_System"></div>
         <div class="line"></div>
-        <div class="loggin">
-            <div class="loggin-label">INGRESAR</div>
-            <div class="user-label">USUARIO:</div>
-            <div class="input-user"><input type="text" placeholder="Usuario"></div>
-            <div class="password-label">CONTRASEÑA:</div>
-            <div class="input-password"><input type="password" placeholder="Contraseña"></div>
+        <form class="loggin" action="/login" method="post">
+            <h2 class="loggin-label">INGRESAR</h2>
+            <label class="user-label" for="username">USUARIO:</label>
+            <input id="username" type="text" name="username" placeholder="Usuario" required>
+            <label class="password-label" for="password">CONTRASEÑA:</label>
+            <input id="password" type="password" name="password" placeholder="Contraseña" required>
             <div class="label-buttons">
                 <div class="create-account"> <a href="#">Registrarse</a></div>
                 <div class="forgot-password"><a href="#">¿Olvidaste tu Contraseña?</a></div>
             </div>
-            <div class="button-loggin"><a href="#">Iniciar Sesión</a></div>
-        </div>
+            <button type="submit" class="button-loggin">Iniciar Sesión</button>
+        </form>
     </div>
     <div class="contact-block">
         <span class="contact-label">¿Necesitas un programa para de Gestión para tu Empresa? Contáctanos!</span>
