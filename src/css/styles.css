@@ -13,7 +13,7 @@ body {
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 44px;
     font-weight: bold;
-    color: #2F3431;
+    color: #2F4858;
 }
 
 /*Estilos para el bloque de Main*/
@@ -48,8 +48,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
-    padding: 4px 8px;
+    padding: 16px 24px;
+    margin: 12px 16px;
     width: 100%;
+    align-items: center;
+    align-content: center;
 }
 
 .main .loggin .loggin-label {
@@ -84,42 +87,32 @@ body {
     color: #2F4858;
 }
 
-.main .loggin .input-user, .input-password {
-    display: flex;
+.main .loggin input {
+    display: inline-block;
     align-items: center;
     align-content: center;
     height: auto;
-    width: 100%;
-    padding: 8px 0px;
-    margin: 0px;
-}
-
-.main .loggin .input-user input, .input-password input {
-    display: block;
-    align-items: center;
-    align-content: center;
-    height: auto;
-    width: 100%;
-    padding: 12px 20px;
+    padding: 12px 16px;
+    margin: 20px 0px;
     border: 1px solid #F1F1F1;
     border-radius: 24px;
     background-color: #F1F1F1;
     font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
     font-size: 22px;
-    margin: 0px;
     outline: none;
+    width: auto;
     color: #336699;
 }
 
-.main .loggin .input-user input:focus, .input-password input:focus {
+.main .loggin input:focus {
     border: 1px solid #86BBD8;
 }
 
-.main .loggin .input-user input:focus::placeholder, .input-password input:focus::placeholder {
+.main .loggin input:focus::placeholder {
     color:#86BBD8;
 }
 
-.main .loggin .input-user input::placeholder, .input-password input::placeholder {
+.main .loggin input::placeholder {
     color: #B3B3B3;
 }
 
@@ -159,17 +152,9 @@ body {
 }
 
 .button-loggin {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content:center;
-    align-items: center;
-    padding: 8px 0px;
-}
-
-.button-loggin a {
+    all:unset;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     width: 100%;
     height: auto;
     align-items: center;
@@ -184,7 +169,7 @@ body {
     font-weight: bold;
 }
 
-.button-loggin a:hover {
+.button-loggin:hover {
     background-color: #86BBD8;
 }
 /*Estilos para el bloque de Contacto*/
@@ -255,8 +240,8 @@ body {
     }
 
     .main .loggin {
-        gap: 4px;
-        padding: 8px 12px;
+        gap: 8px;
+        padding: 12px 0px;
         width: 100%;
     }
     
@@ -265,19 +250,20 @@ body {
     }
 
     .main .loggin .user-label, .password-label{
-        font-size: 18px;
+        font-size: 20px;
         padding: 4px 0px;
     }
 
-    .main .loggin .input-user input, .input-password input {
+    .main .loggin input {
         padding: 12px 16px;
-        font-size: 16px;
+        font-size: 20px;
         margin: 0px;
     }
 
-    .button-loggin a {
-        width: 80%;
+    .button-loggin {
+        width: auto;
         padding: 12px 0px;
+        margin: 0px 24px;
         font-size: 20px;
     }
 
